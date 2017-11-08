@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Single Page</title>
+    <script type="text/javascript">
+    $('nav a').click(function(e){
+    		e.preventDefault();		//evitar el eventos del enlace normal
+    		var strAncla=$(this).attr('href'); //id del ancla
+    			$('body,html').stop(true,true).animate({
+    				scrollTop: $(strAncla).offset().top
+    			},1000);
+
+    	});
+</script>
+  </head>
+  <body>
+
+
+      <div id="menu">
+        <header>
+    		<div class="contenedor">
+
+    			<nav class="menu">
+    				<ul>
+              <li><a href="#" class="goTop"><img src="http://dummyimage.com/200x100/000/fff&text=LOGO" alt="" style="width: 70px;"></a></li>
+    					<li><a href="#" class="goTop">Inicio</a></li>
+    					<li><a href="#servicios" class="goTop">Servicios</a></li>
+    					<li><a href="#nosotros" class="goTop">Nosotros</a></li>
+    					<li><a href="#contactos">Contactos</a></li>
+    				</ul>
+    			</nav>
+    		</div>
+    	</header>
+
+      </div>
+
+    <section id="img-full">
+      <p>Aprendiendo a marquetar <br>con Randy Dominguez</p>
+
+    </section>
+
+    <section id="servicios">
+        <h1>SERVICIOS</h1>
+        <div id="servicio1">
+          <center>
+          <img src="imgservices1.png" alt="">
+          <h2>HTML5</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ds</p>
+        </center>
+        </div>
+        <div id="servicio2">
+
+          <center>
+          <img src="imgservices3.png" alt="">
+          <h2>CSS3</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ds</p>
+        </center>
+
+        </div>
+        <div id="servicio3">
+
+          <center>
+          <img src="imgservices2.png" alt="">
+          <h2>JAVASCRIPT</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ds</p>
+        </center>
+        </div>
+
+    </section>
+
+    <section id="parallax1">
+
+    </section>
+    <section id="nosotros">
+      <h1>TEAM</h1>
+      <br>
+      <div id="nosotros1">
+        <center>
+        <img src="person1.jpg" alt="">
+        <h3>Steve Jobs</h3>
+      </center>
+      </div>
+      <div id="nosotros2">
+        <center>
+        <img src="person2.jpg" alt="">
+        <h3>Bill gates</h3>
+      </center>
+      </div>
+      <div id="nosotros3">
+        <center>
+        <img src="person3.jpg" alt="">
+        <h3>Mark Zuckerberg</h3>
+      </center>
+      </div>
+    </section>
+
+        <section id="parallax1">
+
+        </section>
+
+
+        <section id="contactos">
+          <h1>CONTACTOS</h1>
+          <br>
+          <div class="container">
+		<div class="form__top">
+			<h2>Formulario <span>Registro</span></h2>
+		</div>
+		<form class="form__reg" action="">
+			<input class="input" type="text" placeholder="&#128100;  Nombre" required autofocus>
+            <input class="input" type="email" placeholder="&#9993;  Email" required>
+            <input class="input" type="text" placeholder="&#128222;  Telefono" required>
+
+            <div class="btn__form">
+            	<input class="btn__submit" type="submit" value="SUSCRIBIRSE">
+            	<input class="btn__reset" type="reset" value="LIMPIAR">
+            </div>
+		</form>
+	</div>
+        </section>
+        <section id="parallax1">
+
+        </section>
+
+
+      <div id="footer">
+        <footer> <p>Copyright 2017 - allright reserver Randy Dominguez </p></footer>
+
+      </div>
+      <script type="text/javascript">
+
+      </script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  </body>
+</html>

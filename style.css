@@ -1,0 +1,288 @@
+*{
+padding: 0px;
+margin:0px;
+}
+
+div#menu{
+  background-color: white;
+  width:100%;
+  height: 85px;
+
+}
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+header nav {
+	background:#3498db;
+}
+
+header nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+header nav ul li {
+	float: left;
+  font-size: 40px;
+}
+
+header nav ul li a {
+	display: block;
+	padding:20px;
+	color:#000;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	background:#2980b9;
+}
+
+
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	max-width:1000px;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+section#img-full{
+
+  padding-top:  10px ;
+background: url('imgfull.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+width: 100%;
+height: 85vh;
+
+}
+section#img-full p {
+padding-top: 260px;
+color: white;
+text-align: center;
+font-size: 60px;
+text-shadow: 3px 3px 5px #000;
+}
+
+section#servicios{
+
+  padding-top: 30px;
+  width: 100%;
+  height: 500px;
+  background-color: white;
+
+}
+section#servicios H1{
+
+  text-shadow: 3px 3px 10px #000;
+text-align: center;
+margin:auto;
+font-size: 60px;
+}
+
+div#servicio1{
+  /*background-color: black;*/
+  width: 480px;
+  height: 500px;
+  margin-left: 15px;
+float: left;
+
+}
+div#servicio2{
+
+  float: left;
+  margin-left: 15px;
+  /*background-color: blue;*/
+  width: 480px;
+  height: 500px;
+}
+
+div#servicio3{
+
+  float: left;
+  margin-left: 15px;
+  /*background-color: green;*/
+  width: 480px;
+  height: 500px;
+}
+div#servicio1 img{
+width: 200px;
+height: 200px;
+}
+div#servicio2 img{
+width: 200px;
+height: 200px;
+}
+div#servicio3 img{
+width: 200px;
+height: 200px;
+
+}
+
+  div#servicio1 p{
+font-size: 30px;
+}
+div#servicio2 p{
+font-size: 30px;
+}
+div#servicio3 p{
+font-size: 30px;
+}
+
+section#parallax1{
+  width: 100%;
+  height: 200px;
+  background: url('img2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section#nosotros{
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  margin:auto;
+
+}
+section#nosotros img {
+  width: 410px;
+  -webkit-border-radius: 500px 500px 500px 500px;
+border-radius: 500px 500px 500px 500px;
+
+}
+
+section#nosotros h1{
+  text-align: center;
+  margin:auto;
+  padding-top: 10px;
+  font-size: 60px;
+  text-shadow: 5px 5px 15px #000;
+  }
+  div#nosotros1{
+  margin-left: 40px;
+    width: 450px;
+    height: 500px;
+  float: left;
+  }
+  div#nosotros1 img{
+    width: 400px;
+
+  }
+  div#nosotros2{
+  margin-left: 40px;
+    width: 450px;
+    height: 500px;
+  float: left;
+
+  }div#nosotros3{
+  margin-left: 40px;
+    width: 450px;
+    height: 500px;
+  float: left;
+
+  }
+
+  section#contactos{
+    width: 100%;
+    height: 550px;
+    background-color: white;
+    margin:auto;
+    text-align: center;
+
+  }
+  section#contactos h1{
+  padding-top: 10px;
+  font-size: 60px;
+  text-shadow: 5px 5px 15px #000;
+  }
+div#footer{
+width: 100%;
+height: 200px;
+background-color: black;
+color: #fff;
+text-align: center;
+font-size: 20px;
+}
+div#footer p  {
+  padding-top: 100px;
+}
+
+.container {
+	/*max-width: 450px;*/
+  width: 70%;
+	height: auto;
+	/*background-color: #EFEFEF;*/
+	margin: 5% auto;
+
+	border: solid .4rem #31B1E5;
+	padding-bottom: 1rem;
+
+}
+
+.form__top {
+	width: 100%;
+	text-align: center;
+	padding: 2rem 0 1rem;
+	margin-bottom: 1rem;
+}
+
+.form__top h2 {
+	font-weight: bold;
+	color: #CAC8C8;
+	font-size: 18px;
+}
+
+h2 span {
+	color: #31B1E5;
+}
+
+.form__reg {
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.btn__form {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+.input, .btn__submit, .btn__reset{
+	/*background-color: #EFEFEF;*/
+	padding: .5rem;
+	margin: .5rem 0;
+	border: none;
+	border-bottom: solid #C8C8C8 .2rem;
+	transition: all .5s;
+}
+
+.input:focus {
+	border-bottom: solid #31B1E5 .2rem;
+}
+
+.btn__submit, .btn__reset {
+	width: 40%;
+	border-bottom: none;
+	background-color: #31B1E5;
+	color: white;
+}
+
+.btn__reset {
+	background-color: #31B1E5;
+}
+
+.btn__submit:hover {
+	background-color: #4C9ED9;
+}
+
+.btn__reset:hover{
+	background-color: #4C9ED9;
+}
